@@ -29,17 +29,16 @@ function traverseTree(tree) {
 	if (!tree) return []; 
 	// For holding the tree's the values
 	const printedTree = [];
-	// BFS requires a queue to store node for reference later
+	// BFS requires a queue to store nodes for future reference
 	const queue = [];
 	// Push the tree to the queue
 	queue.push(tree);
 	while (queue.length) {
-		// grab the front node from the queue
+		// Grab the front node from the queue
 		const currentNode = queue.shift();
-		// Add the value to the array
+		// Add the node's value to the array
 		printedTree.push(currentNode.value);
-		// From left to right we add the next nodes 
-		// to the queue
+		// From left to right we add the nodes to the queue
 		if (currentNode.left) {
 			queue.push(currentNode.left)
 		}
