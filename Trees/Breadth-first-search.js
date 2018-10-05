@@ -27,9 +27,9 @@ t = {
 function traverseTree(tree) {
 	// Check if the tree exists
 	if (!tree) return []; 
-	// For holding the tree's the values
+	// For holding the tree's values
 	const printedTree = [];
-	// BFS requires a queue to store nodes for future reference
+	// BFS requires a queue data structure to store nodes for future reference
 	const queue = [];
 	// Push the tree to the queue
 	queue.push(tree);
