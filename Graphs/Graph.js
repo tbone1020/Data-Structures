@@ -90,7 +90,7 @@ function Graph(n) {
 let graph = new Graph(5);
 
 /* We can chain the functions together by including "return this;" in each of the functions.
-This will use the object to call the next function */
+This will use the graph object to call the next function */
 graph.addEdge(4, 1)
     .addEdge(4, 2)
     .addEdge(3, 2)
