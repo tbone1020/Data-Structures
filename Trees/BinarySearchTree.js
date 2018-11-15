@@ -133,7 +133,7 @@ BinaryTree.prototype.addNode = function(node) {
 }
 
 function BinaryTree() {
-
+  this.root = null;
 }
 
 let bst = new BinaryTree();
