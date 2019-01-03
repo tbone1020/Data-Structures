@@ -7,6 +7,30 @@ class Node {
 
 LinkedList.prototype.removeNode = function(node) {
 
+    let temp = this.head;
+    let prev = null;
+    
+    // Check if the head node is what needs to be removed
+    if(temp != null && temp.value == node){
+        this.head = temp.next; 
+        return this;
+    }
+    
+    /* Loop through the linked list and look
+       for the node that needs to be removed */
+    while(temp != null && temp.value != node){
+        prev = temp; 
+        temp = temp.next; 
+    }
+    
+    // return if linked list is empty
+    if (temp == null) return this; 
+
+    /* Remove the node by linking the previous
+       node to the next node */
+    prev.next = temp.next; 
+    
+    return this;
 }
 
 LinkedList.prototype.displayList = function() {
