@@ -2,7 +2,7 @@
 	The Breadth-first Search(BFS) algorithm starts at the root of a binary tree 
 	and visits every node from top to bottom in order from left to right.
 */
-t = {
+const t = {
     "value": 1,
     "left": {
         "value": 2,
